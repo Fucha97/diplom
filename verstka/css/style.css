@@ -1,0 +1,52 @@
+/*todo ОБЩИЕ СТИЛИ*/
+
+.auth-body{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top,#aaddfe, #f8a0ba);
+}
+
+/*todo РЕГИСТРАЦИЯ СТИЛИ*/
+
+.main-page__registration__header{
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar-router{
+    display: flex;
+    margin-right: 4%;
+    margin-top: 50px;
+}
+
+.main-logo{
+    margin-left: 3.7%;
+    margin-top: 40px;
+    width: 6.8%;
+    height: 120px;
+}
+
+.main-logo img{
+    width: 100%;
+    height: 100%;
+}
+
+.navbar-router__btn-login{
+    display: flex;
+}
+
+
+/*todo ЛОГИН СТИЛИ*/
+
+/*todo ПРОФИЛЬ СТИЛИ*/
+
+/*todo РЕЙТИНГ СТИЛИ*/
+
+/*todo ДАННЫЕ СТИЛИ*/
