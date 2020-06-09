@@ -14,6 +14,7 @@
 }
 
 /*todo РЕГИСТРАЦИЯ СТИЛИ*/
+/*todo ЛОГИН СТИЛИ*/
 
 .main-page__registration__header {
     display: flex;
@@ -85,8 +86,8 @@
 .main-logo {
     margin-left: 3.7%;
     margin-top: 43px;
-    width: 6.8%;
-    height: 120px;
+    width: 100px;
+    height: 100px;
 }
 
 .main-logo img {
@@ -209,15 +210,82 @@
     justify-content: center;
 }
 
-.footer-social__btn{
+.footer-social__btn {
     margin-right: 30px;
     margin-bottom: 20px;
 }
 
-/*todo ЛОГИН СТИЛИ*/
+/*todo ДАННЫЕ СТИЛИ*/
+
+.navbar-profile__page {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo__top-left {
+    width: 100px;
+    height: 100px;
+    background: #6F52ED;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar-profile__router-links {
+    display: flex;
+    margin-right: 75px;
+}
+
+.profile-page__logout {
+    margin-top: 38px;
+}
+
+.profile-page__notifications{
+    margin-top: 38px;
+    margin-right: 27px;
+}
+
+.profile-page__avatar{
+    margin-top: 25px;
+    margin-right: 51px;
+}
+
+.profile-page__username{
+    margin-top: 43px;
+    margin-right: 12px;
+}
+
+.profile-page__main{
+    display: flex;
+}
+
+.left-router{
+    display: flex;
+    flex-direction: column;
+    background: #373B53;
+    width: 100px;
+    height: 100vh;
+    align-items: center;
+}
+
+.planet-svg{
+    margin-top: 57px;
+}
+
+.statistic-svg{
+    margin-top: 35px;
+}
+
+.vip-svg{
+    margin-top: 35px;
+    font-family: Gilroy-Bold sans-serif;
+    font-size: 24px;
+    line-height: 28px;
+    color: #969CBA;
+}
 
 /*todo ПРОФИЛЬ СТИЛИ*/
 
 /*todo РЕЙТИНГ СТИЛИ*/
 
-/*todo ДАННЫЕ СТИЛИ*/
+
