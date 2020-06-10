@@ -1,0 +1,24 @@
+
+function cookiesCleaner(req, res, next) {
+    if (req.cookies.user_sid && !req.session.user) {
+        res.clearCookie('user_sid');
+    }
+    next();
+}
+
+
+// middleware function to check for logged-in users
+const sessionChecker = (req, res, next) => {
+    if (req.session.user && req.cookies.user_sid) {
+        res.json(true);
+        next()
+    } else {
+        res.json(false)
+        next();
+    }
+};
+
+module.exports = {
+    sessionChecker,
+    cookiesCleaner
+}
