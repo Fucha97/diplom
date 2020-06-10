@@ -25,39 +25,24 @@ router.route("/api/login").post(async (req, res) => {
 });
 
 router.route("/api/signup").post(async (req, res) => {
-  let newUser = await User.findOne({ email: req.body.email });
+  let newUser = await User.findOne({ login: req.body.login });
   if (!newUser) {
-    const pass = await bcrypt.hash(req.body.password, 12);
+    console.log('ne upal');
+    // const pass = await bcrypt.hash(req.body.pass, 12);
+    console.log('ne upal2');
+
     const user = new User({
-      username: req.body.username,
-      email: req.body.email,
-      password: pass,
-      player: {
-        type: "player",
-        name: req.body.username,
-        avatar:
-          "https://img.gifmagazine.net/gifmagazine/images/1301133/original.gif",
-        percs: [],
-        stats: {
-          lvl: 1,
-          health: 300,
-          damage: 10
-        },
-        gold: 25
-      }
+      login: req.body.login,
+      password: req.body.pass,
+      birth: req.body.birth,
+      female: req.body.famele,
+      fullName: req.body.fullName
     });
     await user.save();
+    console.log('ne upal2');
     req.session.user = user;
     res.json({
-      username: user.username,
-      player: {
-        type: user.type,
-        name: user.username,
-        avatar: user.avatar,
-        percs: [user.percs],
-        stats: { ...user.stats },
-        gold: user.gold
-      }
+      login: user.login,
     });
   } else {
     const message = "Такой пользователь уже существует";
