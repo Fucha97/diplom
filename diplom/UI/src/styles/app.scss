@@ -1,0 +1,560 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+body {
+    font-family: "Gilroy", sans-serif;
+    line-height: 1;
+    color: black;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+
+/* remember to define focus styles! */
+:focus {
+    outline: 0;
+}
+
+/* remember to highlight inserts somehow! */
+ins {
+    text-decoration: none;
+}
+del {
+    text-decoration: line-through;
+}
+
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/*todo ОБЩИЕ СТИЛИ*/
+
+/*todo ДАННЫЕ СТИЛИ*/
+
+/*todo ВРЕМЕННЫЕ СТИЛИ*/
+
+/*todo РЕЙТИНГ СТИЛИ*/
+
+
+/*todo РЕГИСТРАЦИЯ СТИЛИ*/
+/*todo ЛОГИН СТИЛИ*/
+
+.auth {
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(to top, #aaddfe, #f8a0ba);
+
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+    }
+}
+
+.navbar-router {
+    display: flex;
+    margin-right: 4%;
+    margin-top: 78px;
+}
+
+.navbar-router__btn__blog {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #FFFFFF;
+    box-sizing: border-box;
+    width: 127px;
+    height: 50px;
+    margin-right: 51px;
+    font-family: Gilroy serif;
+    font-size: 36px;
+    line-height: 24px;
+    /* identical to box height, or 67% */
+
+    letter-spacing: 0.01em;
+
+    color: #FFFFFF;
+}
+
+.navbar-router__btn__registration {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #FFFFFF;
+    box-sizing: border-box;
+    width: 250px;
+    height: 50px;
+    margin-right: 51px;
+    font-family: Gilroy serif;
+    font-size: 36px;
+    line-height: 24px;
+    /* identical to box height, or 67% */
+
+    letter-spacing: 0.01em;
+
+    color: #FFFFFF;
+}
+
+.navbar-router__btn__login {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 151px;
+    height: 50px;
+    border: 2px solid #00C9DF;
+    box-sizing: border-box;
+    font-family: Gilroy;
+    font-size: 36px;
+    line-height: 24px;
+    /* identical to box height, or 67% */
+
+    letter-spacing: 0.01em;
+
+    color: #00C9DF;
+}
+
+.main-logo {
+    margin-left: 3.7%;
+    margin-top: 43px;
+}
+
+.main-logo img {
+    width: 100%;
+    height: 100%;
+}
+
+.navbar-router__btn-login {
+    display: flex;
+}
+
+.main-page__title {
+    display: flex;
+    width: 853px;
+    height: 169px;
+    margin-left: 86px;
+    margin-top: 66px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 144px;
+    line-height: 169px;
+    /* identical to box height */
+
+    text-align: center;
+
+    color: #FFFFFF;
+}
+
+.registration-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 172px;
+}
+
+.main-page__input {
+    display: flex;
+    justify-content: flex-start;
+    width: 600px;
+    height: 100px;
+    background: #FFFFFF;
+    border: 3px solid #00C9DF;
+    box-sizing: border-box;
+    margin-bottom: 50px;
+    font-family: Gilroy-Bold;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    color: #969CBA;
+}
+
+.registration-form__checkboxes {
+    display: flex;
+}
+
+.sex-registration {
+    font-family: Gilroy-Bold sans-serif;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    color: #FFFFFF;
+    margin-right: 68px;
+}
+
+.sex-registration__letter {
+    font-family: Gilroy-Bold;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    color: #FFFFFF;
+    margin-right: 8px;
+}
+
+.checkbox {
+    width: 50px;
+    height: 50px;
+    background: #FFFFFF;
+    border: 3px solid #00C9DF;
+    box-sizing: border-box;
+    margin-right: 61px;
+}
+
+.main-page__submit__reg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 50px;
+    background: #00C9DF;
+    font-family: Gilroy-Bold serif;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    margin-top: 100px;
+    color: #FFFFFF;
+    border: 1px solid #00C9DF;
+}
+
+.main-page__registration__footer {
+    display: flex;
+    margin-top: 321px;
+}
+
+.footer-date {
+    font-family: Gilroy;
+    font-size: 36px;
+    line-height: 24px;
+    /* identical to box height, or 67% */
+    margin-left: 49%;
+    letter-spacing: 0.01em;
+    color: #FFFFFF;
+    margin-right: 475px;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+}
+
+.footer-social__btn {
+    margin-right: 30px;
+    margin-bottom: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*todo МЕНЮ СПРАВА FIXED*/
+
+.menu {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 77px;
+
+    &__logo {
+        height: 77px;
+        width: inherit;
+        background: #6F52ED;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__logo:hover {
+        cursor: pointer;
+    }
+
+    &__router {
+        display: flex;
+        flex-direction: column;
+        background: #373B53;
+        align-items: center;
+        flex-grow: 1;
+        padding: 42px 0 0 0;
+    }
+
+    &__icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: "Gilroy_Bold", sans-serif;
+        font-size: 24px;
+        line-height: 28px;
+        color: #969CBA;
+        width: 30px;
+        padding: 15px;
+        border: none;
+        border-radius: 10px;
+        margin: 1px 0;
+
+        &--active {
+            background-color: #FFFFFF;
+        }
+    }
+
+    &__icon:hover {
+        background-color: #FFFFFF;
+        color: #373B53;
+        cursor: pointer;
+    }
+
+    &__settings {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #373B53;
+        padding: 10px 0;
+        border-top: 1px solid #494E67;
+    }
+}
+
+/*todo ВЕРХНИЙ NAVBAR*/
+
+.navbar {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0 10px 0 0;
+
+    &__link {
+        margin: 10px 2px;
+        padding: 15px;
+        font-size: 16px;
+        letter-spacing: 0.01em;
+        border: none;
+        border-radius: 10px;
+    }
+
+    &__link:hover {
+        background-color: #373B53;
+        color: #FFFFFF;
+        cursor: pointer;
+    }
+
+    &__avatar {
+        margin: 0 20px 0 10px;
+        flex-shrink: 0;
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+        overflow: hidden;
+
+        img {
+            display: block;
+            width: inherit;
+            height: inherit;
+            object-fit: cover;
+            object-position: center center;
+        }
+    }
+
+    &__avatar:hover {
+        cursor: pointer;
+    }
+
+    &__border {
+        height: 60px;
+        border-left: 1px solid #EFF4F7;
+        margin: 0 5px;
+    }
+}
+
+/*todo ПРОФИЛЬ СТИЛИ*/
+
+.profile {
+    display: flex;
+    flex-direction: column;
+    background: #DFE1EB;
+    //не понимаю почему, но не работает без 100vh
+    flex-grow: 1;
+    margin: 0 0 0 77px;
+    padding: 0 40px;
+
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 0;
+    }
+
+    &__title {
+        font-family: "Roboto", sans-serif;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 35px;
+        letter-spacing: 0.01em;
+    }
+
+    &__button {
+        display: flex;
+        align-items: center;
+        background: #6F52ED;
+        border: none;
+        border-radius: 5px;
+        padding: 10px 20px;
+
+        &-add{
+            color: #FFFFFF;
+        }
+
+        &-svg {
+            margin: 0 10px 0 0;
+        }
+    }
+
+    &__button:hover {
+        cursor: pointer;
+    }
+
+    &__marks {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        // todo при уменьшении окна некрасиво переставляеться, хзя как поправить
+        justify-content: space-between;
+    }
+
+    &__achievement {
+        display: flex;
+        align-items: center;
+        width: 25%;
+        padding: 20px 0 20px 20px;
+        margin: 0 0 28px 0;
+        //  todo поправить box-shadow, в фигме не прописана тень
+        //box-shadow: 0 6px 6px -6px #EDEDF6;
+    }
+
+    &__img-mark {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 50px;
+        height: 50px;
+        border: none;
+        border-radius: 50%;
+        background-color: #00C9DF;
+        font-size: 10px;
+        letter-spacing: 0.01em;
+        color: #FFFFFF;
+        margin: 0 15px 0 0;
+        flex-shrink: 0;
+    }
+
+    &__drill {
+        font-size: 12px;
+        line-height: 16px;
+        letter-spacing: 0.01em;
+        color: #A6ACBE;
+    }
+
+    &__quantity {
+        font-size: 24px;
+        letter-spacing: 0.01em;
+        margin: 0 0 4px 0;
+    }
+
+    &__graph, &__result, &__achievement {
+        border: none;
+        border-radius: 10px;
+        background-color: #FFFFFF;
+    }
+
+    &__graph {
+        width: 50%;
+        margin: 0 5px 0 0;
+    }
+
+    &__result {
+        display: flex;
+        justify-content: space-evenly;
+        width: 50%;
+        margin: 0 0 0 5px;
+        padding: 0 10px;
+    }
+
+    &__time-result {
+
+    }
+
+    &__trophy-result {
+
+    }
+
+    &__achievement-res {
+        display: flex;
+        align-items: flex-start;
+        width: 25%;
+        padding: 20px 0 20px 20px;
+    }
+
+    &__img-res {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 50px;
+        height: 50px;
+        border: none;
+        border-radius: 50%;
+        background-color: #fff8e6;
+        font-size: 10px;
+        letter-spacing: 0.01em;
+        color: #FFFFFF;
+        margin: 0 15px 0 0;
+        flex-shrink: 0;
+    }
+}
+

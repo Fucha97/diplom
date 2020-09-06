@@ -3,7 +3,8 @@ import { BrowserRouter, Route, Switch } from "react-router-dom";
 import { DialogRegistration } from "./components/authentication-page";
 import { LoginForm } from "./components/login-form";
 import { ProfilePage } from './components/profile-page';
-import "./app.scss";
+import "./styles/flex.scss";
+import "./styles/app.scss";
 
 const RouterPath = {
   /** Страница регистрации */
@@ -11,7 +12,8 @@ const RouterPath = {
   /** Страница ввода логина */
   login: "/login",
   main: "/",
-  profile:"/profile/:id/"
+  profile:"/profile/:id/",
+
 };
 
 function App() {

@@ -1,6 +1,6 @@
 /*todo ОБЩИЕ СТИЛИ*/
 
-.auth-body {
+.auth {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -16,7 +16,7 @@
 /*todo РЕГИСТРАЦИЯ СТИЛИ*/
 /*todo ЛОГИН СТИЛИ*/
 
-.main-page__registration__header {
+.host__header {
     display: flex;
     justify-content: space-between;
 }
@@ -217,12 +217,12 @@
 
 /*todo ДАННЫЕ СТИЛИ*/
 
-.navbar-profile__page {
+.navbar {
     display: flex;
     justify-content: space-between;
 }
 
-.logo__top-left {
+.menu__logo {
     width: 100px;
     height: 100px;
     background: #6F52ED;
@@ -231,7 +231,7 @@
     align-items: center;
 }
 
-.navbar-profile__router-links {
+.navbar__links {
     display: flex;
     margin-right: 75px;
 }
@@ -259,7 +259,7 @@
     display: flex;
 }
 
-.left-router{
+.menu__router{
     display: flex;
     flex-direction: column;
     background: #373B53;
@@ -268,15 +268,15 @@
     align-items: center;
 }
 
-.planet-svg{
+.menu__icon{
     margin-top: 57px;
 }
 
-.statistic-svg{
+.menu__icon{
     margin-top: 35px;
 }
 
-.vip-svg{
+.menu__icon{
     margin-top: 35px;
     font-family: Gilroy-Bold sans-serif;
     font-size: 24px;
